@@ -8,7 +8,7 @@ Template Name: template-home-page
 
 <div class="grid" data-limited>
     <div class="column" data-width="1/2" data-color="theme1" data-align="center">
-        <h5>Heading</h5>
+        <h5>Aaron Releford's Portfolio</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, alias.</p>
         <h4>Heading</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quisquam.</p>
