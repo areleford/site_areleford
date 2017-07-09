@@ -1,0 +1,34 @@
+$theme1: #f15d2f;
+$theme2: #ffba38;
+$theme3: #282f39;
+$theme4: #f7f1e3;
+$theme5: #2291bf;
+
+$white1: #fff;
+$white2: #f7f7f7;
+$grey1: #f1f1f1;
+$grey2: #ccc;
+$black1: #222;
+$black2: #000;
+
+$white: #fff;
+$black: #000;
+
+// poppins
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

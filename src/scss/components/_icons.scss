@@ -1,0 +1,74 @@
+// ICON SIZES
+$icon-size1: 1rem;
+$icon-size2: 2rem;
+$icon-size3: 3rem;
+$icon-size4: 4rem;
+$icon-size5: 5rem;
+$icon-size6: 6rem;
+$icon-size7: 7rem;
+$icon-size8: 8rem;
+$icon-size9: 9rem;
+
+.fa[data-size="1"] {
+	font-size: $icon-size1;
+}
+.fa[data-size="2"] {
+	font-size: $icon-size2;
+}
+.fa-stack[data-size="3"] {
+	font-size: $icon-size3;
+}
+.fa[data-size="4"] {
+	font-size: $icon-size4;
+}
+.fa[data-size="5"] {
+	font-size: $icon-size5;
+}
+.fa[data-size="6"] {
+	font-size: $icon-size6;
+}
+.fa[data-size="7"] {
+	font-size: $icon-size7;
+}
+.fa[data-size="8"] {
+	font-size: $icon-size8;
+}
+.fa[data-size="9"] {
+	font-size: $icon-size9;
+}
+
+i {
+    position: relative;
+}
+
+.fa > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.5em;
+}
+
+// Icon with text beside it
+.icon-text {
+    display: flex;
+    align-items: center;
+
+    i {
+        margin-right: 10px;
+    }
+
+    &[data-align='left'] {
+        justify-content: flex-start;
+        text-align: left;
+    }
+    &[data-align='right'] {
+        justify-content: flex-end;
+        text-align: right;
+    }
+    &[data-align='center'] {
+        justify-content: center;
+        text-align: center;
+    }
+}
+

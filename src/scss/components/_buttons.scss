@@ -1,0 +1,103 @@
+$button-padding-width: 12px;
+$button-padding-height: 8px;
+
+button.sx-button {
+    font-size: 1.5rem;
+    padding: $button-padding-height $button-padding-width;
+    margin-top: 10px;
+    border: none;
+
+    // CAPS
+    &[data-uppercase] {
+        text-transform: uppercase;
+    }
+
+    &[data-bold] {
+        font-weight: bold;
+    }
+
+    //-------------
+    // SIZE
+    //-------------
+    &[data-size="1"] {
+        font-size: 1rem;
+    }
+    &[data-size="2"] {
+        font-size: 1.5rem;
+        padding: ($button-padding-height * 1.5) ($button-padding-width * 1.5);
+    }
+    &[data-size="3"] {
+        font-size: 2rem;
+        padding: ($button-padding-height * 2) ($button-padding-width * 2);
+    }
+    &[data-size="4"] {
+        font-size: 2.5rem;
+        padding: ($button-padding-height * 2.5) ($button-padding-width * 2.5);
+    }
+    &[data-size="5"] {
+        font-size: 3rem;
+        padding: ($button-padding-height * 3) ($button-padding-width * 3);
+    }
+    
+
+    //-------------
+    // COLORS
+    //-------------
+
+    // theme
+    &[data-color="theme1"] {
+        background-color: $theme1;
+    }
+    &[data-color="theme2"] {
+        background-color: $theme2;
+    }
+    &[data-color="theme3"] {
+        background-color: $theme3;
+    }
+    &[data-color="theme4"] {
+        background-color: $theme4;
+    }
+    &[data-color="theme5"] {
+        background-color: $theme5;
+    }
+
+    // greyscale
+    &[data-color="white1"] {
+        background-color: $white1;
+    }
+    &[data-color="white1"]:hover {
+        background-color: darken($white1, 10%);
+    }
+    &[data-color="white2"] {
+        background-color: $white2;
+    }
+    &[data-color="white2"]:hover {
+        background-color: darken($white2, 10%);
+    }
+    &[data-color="grey1"] {
+        background-color: $grey1;
+    }
+    &[data-color="grey1"]:hover {
+        background-color: darken($grey1, 10%);
+    }
+    &[data-color="grey2"] {
+        background-color: $grey2;
+    }
+    &[data-color="grey2"]:hover {
+        background-color: darken($grey2, 10%);
+    }
+    &[data-color="black1"] {
+        background-color: $black1;
+        color: $white;
+    }
+    &[data-color="black1"]:hover {
+        background-color: lighten($black1, 10%);
+    }
+    &[data-color="black2"] {
+        background-color: $black2;
+        color: $white;
+    }
+    &[data-color="black2"]:hover {
+        background-color: lighten($black2, 10%);
+    }
+}
