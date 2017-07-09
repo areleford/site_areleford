@@ -1,2 +1,0 @@
-# templateTheme
-Wordpress template theme
