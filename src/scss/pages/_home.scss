@@ -1,0 +1,170 @@
+.back-to-top {
+    i {
+        color: $white;
+    }
+}
+
+.home-header {
+    background-color: $theme4;
+    background-image: url("data:image/svg+xml,%3Csvg width='84' height='88' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23cccccc' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: $theme3;
+    padding-top: 150px;
+
+    .heading {
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+    .sub-heading {
+        font-size: 2rem;
+        color: $white;
+    }
+    .engineer {
+        max-width: 350px;
+        margin-top: 50px;
+    }
+}
+
+.home-dev-header {
+    background-color: $theme3;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%234a4a4f' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    h2 {
+        color: $white;
+    }
+    p.sub-heading {
+        color: $black1;
+    }
+
+    & > .grid {
+        position: relative;
+    }
+
+    .hammer {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 500px;
+    }
+    .wrench {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        width: 500px;
+    }
+}
+.home-dev-info {
+    background-color: $white1;
+
+    h2 {
+        color: $theme3;
+    }
+    h3 {
+        color: $theme3;
+    }
+    p {
+        color: $black1;
+    }
+    i {
+        color: $theme1;
+    }
+    p.heading {
+        font-size: 2.4rem;
+        color: $black2;
+        font-weight: bold;
+    }
+    p.sub-heading {
+        color: $theme5;
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+}
+
+.home-dev-features {
+    background-color: $theme4;
+
+    p.sub-heading {
+        color: $theme3;
+        font-weight: bold;
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+    }
+
+    .seo {
+        max-width: 300px;
+    }
+    .fast {
+        max-width: 500px;
+        padding: 20px 0;
+    }
+}
+
+.home-design-header {
+    background-color: #ffba38;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23d28843' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    & > .grid {
+        position: relative;
+    }
+    .pencil {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 500px;
+    }
+    .scissors {
+        position: absolute;
+        top: -100px;
+        right: 0;
+        width: 500px;
+    }
+    h2 {
+        color: $theme3;
+    }
+    p.sub-heading {
+        color: $white1;
+    }
+}
+.home-design-info {
+    h2, h3 {
+        color: $theme3;
+    }
+    p {
+        color: $black1;
+    }
+    i {
+        color: $theme1;
+    }
+    p.sub-heading {
+        font-weight: bold;
+        font-size: 2.4rem;
+        color: $theme5;
+    }
+}
+
+.home-portfolio {
+    background-color: $theme4;
+    
+    .client {
+        box-shadow: 3px 3px 8px rgba($black2, 0.3);
+        width: 100%;
+        height: 100%;
+
+        .client-info {
+            background: $white1;
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.home-contact {
+    background: $theme5 url("../img/phone.svg") bottom left / 100% no-repeat;
+    color: $white1;
+
+    p.contact-description {
+        margin-bottom: 10px;
+    }
+
+    p.contact-info {
+        font-size: 2rem;
+    }
+}

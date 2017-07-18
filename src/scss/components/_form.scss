@@ -3,19 +3,26 @@
         width: 100%;
         margin: 10px 0;
         font-size: 1.2rem;
+        padding: 5px;
     }
 
     label {
         font-size: 1.4rem;
+        color: $white1;
     }
 
     input[type="submit"] {
         font-size: 1.4rem;
         border: none;
         padding: 10px;
-        background-color: $theme5;
+        background-color: $theme3;
+        border-radius: 4px;
         color: $white;
         margin: 0;
+
+        &:hover {
+            background-color: lighten($theme3, 10%);
+        }
     }
 }
 

@@ -3,8 +3,9 @@ require.context("../img", true, /^\.\//);
 
 $(document).ready(() => {
 
+    // Fixed nav showing on scroll up
     let lastScrollTop = 0;
-    let delta = 5;
+    let delta = 4;
     let $siteNav = $("#siteNav");
     let navBarHeight = $siteNav.height();
     console.log(navBarHeight);
@@ -17,18 +18,18 @@ $(document).ready(() => {
         }
 
         if(curScrollTop > lastScrollTop && curScrollTop > navBarHeight) {
-            // scrolling down
-            $siteNav.hide(300);
+            // scrolling down - hide
+            $siteNav.css({"transform":"translateY(-200px)"});
         } else {
-            // scrolling up
-            $siteNav.show(300);
+            // scrolling up - show
+            $siteNav.css({"transform":"translateY(0px)"});
         }
 
         lastScrollTop = curScrollTop;
     };
 
     $(document).on("scroll", () => {
-        //handleScroll();
+        handleScroll();
     });
 
     // Mobile Hamburger
@@ -40,6 +41,36 @@ $(document).ready(() => {
     $('a[href="#top"]').click(() => {
         $('html, body').animate({ scrollTop: 0 }, 'slow');
         return false;
+    });
+
+    // SLIDER
+    $('.slider .right').click(() => {
+        let $curSlide = $('.slide.active');
+        let $nextSlide = $curSlide.next('.slide');
+
+        // hide current slide
+        if($nextSlide.length) {
+            $curSlide.removeClass('active');
+            $curSlide.addClass('exit-left');
+            if($nextSlide.hasClass('exit-right')) {
+                $nextSlide.removeClass('exit-right');
+            }
+            $nextSlide.addClass('active');
+        }
+    });
+    $('.slider .left').click(() => {
+        let $curSlide = $('.slide.active');
+        let $prevSlide = $curSlide.prev('.slide');
+
+        // hide current slide
+        if($prevSlide.length) {
+            $curSlide.removeClass('active');
+            $curSlide.addClass('exit-right');
+            if($prevSlide.hasClass('exit-left')) {
+                $prevSlide.removeClass('exit-left');
+            }
+            $prevSlide.addClass('active');
+        }
     });
 });
 

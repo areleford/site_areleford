@@ -6,11 +6,12 @@ $limit-width: 1200px;
 
 // grid padding
 $grid-padding0: 0;
-$grid-padding1: 20px 0;
+$grid-padding1: 10px 0;
 $grid-padding2: 40px 0;
 $grid-padding3: 60px 0;
 $grid-padding4: 80px 0;
 $grid-padding5: 100px 0;
+$grid-padding6: 120px 0;
 
 // column padding
 $column-padding0: 0;
@@ -56,6 +57,9 @@ $column-padding5: ($gutter-width * 8);
     &[data-padding="5"] {
         padding: $grid-padding5;
     }
+    &[data-padding="6"] {
+        padding: $grid-padding6;
+    }
 
     // Bordered
     &[data-bordered] {
@@ -75,6 +79,11 @@ $column-padding5: ($gutter-width * 8);
     margin: auto;
     display: flex;
     flex-flow: row wrap;
+
+    // pushed
+    &[data-pushed] {
+        justify-content: center;
+    }
 
     // Set all child columns to same width
     &[data-columns="2"] {
@@ -98,9 +107,69 @@ $column-padding5: ($gutter-width * 8);
         }
     }
 
-    // Align row contents
+    // Set alignment for all rows
+    &[data-align="top-left"] {
+        & > .column {
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: left;
+        }
+    }
+    &[data-align="top"] {
+        & > .column {
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+        }
+    }
+    &[data-align="top-right"] {
+        & > .column {
+            align-items: flex-end;
+            justify-content: flex-start;
+            text-align: right;
+        }
+    }
+    &[data-align="left"] {
+        & > .column {
+            align-items: flex-start;
+            justify-content: center;
+            text-align: left;
+        }
+    }
     &[data-align="center"] {
-        justify-content: center;
+        & > .column {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    &[data-align="right"] {
+        & > .column {
+            align-items: flex-end;
+            justify-content: center;
+            text-align: right;
+        }
+    }
+    &[data-align="bottom-left"] {
+        & > .column {
+            align-items: flex-start;
+            justify-content: flex-end;
+            text-align: left;
+        }
+    }
+    &[data-align="bottom"] {
+        & > .column {
+            align-items: center;
+            justify-content: flex-end;
+            text-align: center;
+        }
+    }
+    &[data-align="bottom-right"] {
+        & > .column {
+            align-items: flex-end;
+            justify-content: flex-end;
+            text-align: right;
+        }
     }
 
     // PADDING
@@ -148,6 +217,13 @@ $column-padding5: ($gutter-width * 8);
     &[data-color="theme4"] {
         background-color: $theme4;
         color: $white;
+    }
+    &[data-color="theme5"] {
+        background-color: $theme5;
+        color: $white;
+    }
+    &[data-color="white1"] {
+        background-color: $white1;
     }
     &[data-color="theme5"] {
         background-color: $theme5;

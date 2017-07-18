@@ -1,10 +1,14 @@
 <?php
 
-$links = array("About", "Services", "Portfolio", "Contact");
+$links = array("websites", "graphics", "portfolio", "contact");
 
 function generateNavigation($links) {
     foreach($links as $item) {
-        echo '<a href="./' . $item . '"><div class="nav-link"><li>' . $item . '</li></div></a>'; 
+        echo '<a href="#' . $item . '">
+                <div class="nav-link">
+                    <li>' . $item . '</li>
+                </div>
+            </a>'; 
     }
 }
 ?>
@@ -18,28 +22,30 @@ function generateNavigation($links) {
     <?php wp_head(); ?>
 </head>
 <body>
-    <nav class="site-nav">
+    <nav id="siteNav" class="site-nav">
         <div class="grid" data-limited data-padding="1">
             <div class="column">
-                <div class="nav-wrapper">
-                    <div class="desktop">
-                        <a href="home">Logo Goes Here</a>
-                        
-                        <ul class="nav-links">
-                            <?php
-                            generateNavigation($links);
-                            ?>
-                        </ul>
-                    </div>
+                <div class="desktop">
+                    <a href="#home"><div class="logo-wrapper"><img class="logo" src="<?php echo get_template_directory_uri() ?>/dist/img/logo.svg"/></div></a>
+                    
+                    <ul class="nav-links">
+                        <?php
+                        foreach($links as $item) {
+                            $gearNumber = 1;
+                            echo '<a href="#' . $item . '">
+                                    <div class="nav-link">
+                                        <li>' . $item . '</li>
+                                        <div class="img-wrapper"><img src="' . get_template_directory_uri() . '/dist/img/gear.svg"/></div>
+                                    </div>
+                                </a>';
+                        }
+                        ?>
+                    </ul>
+                </div>
 
-                    <div class="mobile">
-                        <a href="home">Logo Goes Here</a>
-                        <div class="hamburger" id="hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
+                <div class="mobile">
+                    <a href="#home"><div class="logo-wrapper"><img class="logo" src="<?php echo get_template_directory_uri() ?>/dist/img/logo.svg"/></div></a>
+                    <div class="hamburger"><img id="hamburger" src="<?php echo get_template_directory_uri() ?>/dist/img/gear.svg"/></div>
                 </div>
             </div>
         </div>

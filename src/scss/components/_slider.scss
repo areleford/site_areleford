@@ -1,0 +1,49 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+
+    .left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-left: 10px;
+        z-index: 10;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .right {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-right: 10px;
+        z-index: 10;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    
+    .slide {
+        background: rgba($black2, 0.2);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 500px;
+        padding: 20px 100px;
+        transform: translateX(100%);
+        transition: transform 1s ease;
+
+        &.active {
+            transform: translateX(0);
+        }
+
+        &.exit-right {
+            transform: translateX(100%);
+        }
+        &.exit-left {
+            transform: translateX(-100%);
+        }
+    }
+}

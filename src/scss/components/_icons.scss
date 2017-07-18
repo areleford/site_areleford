@@ -37,6 +37,11 @@ $icon-size9: 9rem;
 	font-size: $icon-size9;
 }
 
+// colors
+.fa[data-color="theme1"] {
+    color: $theme1;
+}
+
 i {
     position: relative;
 }

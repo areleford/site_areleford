@@ -38,10 +38,9 @@ module.exports = {
             },
             // IMAGES
 			{
-				test: /\.(png|jpe?g|gif|svg)$/,
+				test: /\.(png|jpe?g|JPE?G|gif|svg)$/,
                 include: [
-                    path.resolve(__dirname, "src/img"),
-                    path.resolve(__dirname, "node_modules/semantic-ui-less")
+                    path.resolve(__dirname, "src/img")
                 ],
 				loader: "file-loader",
                 options: {
@@ -52,8 +51,7 @@ module.exports = {
             {
                 test: /\.(svg|eot|ttf|woff|woff2)$/,
                 include: [
-                    path.resolve(__dirname, "src/fonts"),
-                    path.resolve(__dirname, "node_modules/semantic-ui-less")   
+                    path.resolve(__dirname, "src/fonts")   
                 ],
                 loader: "file-loader",
                 options: {
@@ -70,7 +68,7 @@ module.exports = {
         }),
         new ExtractTextPlugin("/style.css"),
         new BrowserSyncPlugin({
-		    proxy: 'localhost:8080/myTemplate',
+		    proxy: 'localhost:8080/areleford',
 		    port: 3000,
 		    files: [
 		        '**/*.php'

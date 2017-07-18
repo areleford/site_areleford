@@ -9,6 +9,18 @@ function wpLearning_scripts() {
 }
 add_action("wp_enqueue_scripts", "wpLearning_scripts");
 
+function theme_typekit() {
+    wp_enqueue_script( 'theme_typekit', '//use.typekit.net/koo5xdo.js', '', false);
+}
+add_action( 'wp_enqueue_scripts', 'theme_typekit' );
+
+function theme_typekit_inline() {
+if ( wp_script_is( 'theme_typekit', 'done' ) ) { ?>
+    <script>try{Typekit.load({ async: false });}catch(e){}</script>
+<?php }
+}
+add_action( 'wp_head', 'theme_typekit_inline' );
+
 // Wordpress Titles
 add_theme_support("title-tag");
 // Support Featured Images
